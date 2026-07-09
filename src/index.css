@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+@theme {
+  --color-primary: #1B2F23;
+  --color-primary-container: #4A5D4E;
+  --color-secondary: #A0522D;
+  --color-tertiary: #C7A17A;
+  --color-background: #F7F3ED;
+  --color-surface: #F7F3ED;
+  --color-surface-variant: #F0EBE3;
+  --color-surface-container: #E5E1D8;
+  --color-surface-container-low: #F0EBE3;
+  --color-surface-container-highest: #1B2F23;
+  --color-on-surface: #1B2F23;
+  --color-on-surface-variant: #4A5D4E;
+  --color-on-primary: #F7F3ED;
+  --color-outline: #4A5D4E;
+  --font-headline: "Newsreader", serif;
+  --font-body: "Plus Jakarta Sans", sans-serif;
+}
+
+/* Custom Scrollbar for the Archive look */
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+::-webkit-scrollbar-track {
+  background: #F0EBE3;
+}
+::-webkit-scrollbar-thumb {
+  background: #1B2F23;
+  border-radius: 2px;
+}
+
+/* Subtle texture for Linen background */
+.linen-texture {
+  background-color: #F7F3ED;
+  background-image: url("https://www.transparenttextures.com/patterns/natural-paper.png");
+}
+
+/* Custom fade in animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.5s ease-out forwards;
+}
+
